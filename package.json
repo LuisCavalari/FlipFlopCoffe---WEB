@@ -1,0 +1,17 @@
+{
+  "name": "flipflop",
+  "version": "1.0.0",
+  "description": "CRM for a new generations coffe",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Luis Felipe Cavalari",
+  "license": "ISC",
+  "dependencies": {
+    "bootstrap": "^4.3.1",
+    "chart.js": "^2.8.0",
+    "fontawesome": "^5.6.3",
+    "jquery": "^3.4.1"
+  }
+}

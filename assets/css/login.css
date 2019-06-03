@@ -1,0 +1,75 @@
+.form-login{
+    width: 100%;
+    max-width: 410px;
+    margin:auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    
+    margin-top:80px;
+    border:1px solid #fff;
+    opacity: 0.8;
+    border-radius: 8px;
+    padding:20px;
+}body{
+    display: flex;
+    color:#fff;
+    font-family: 'Merriweather Sans', sans-serif;
+    background: #0f0c29;  /* fallback for old browsers */
+background: -webkit-linear-gradient(to right, #24243e, #302b63, #0f0c29);  /* Chrome 10-25, Safari 5.1-6 */
+background: linear-gradient(to right, #24243e, #302b63, #0f0c29); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+
+    
+    
+    
+
+    
+
+    
+
+}html{
+    height: 100%;
+}.h3{
+    font-size: 1.72rem;
+}input[type=text],input[type=password]{
+    background:transparent;
+    border:none;
+    border-bottom:2px solid #fff; 
+    height: 50px;
+    width: 92%;
+    padding: 0;
+    transition:400ms all linear;
+    color:#fff;
+    font-size: 24px;
+    margin-bottom: 15px;
+    background: transparent;
+    padding-left:35px;
+    
+}input[type=text]:focus,input[type=password]:focus{
+    border-bottom: 2px solid #400B80;
+    background: transparent;
+
+}input::placeholder{
+    color:#fff;
+    
+}input[type=submit]{
+    background-image: linear-gradient(-225deg, #AC32E4 0%, #7918F2 48%, #4801FF 100%);    padding:15px;
+    margin-top:15px;
+    border-radius:30px;
+    width: 200px;
+    color:#fff;
+    font-weight: 800;
+    font-size: 16px;
+    border:none;
+    cursor:pointer;
+    
+}.inputComIcon i{
+    position: absolute;
+    left: 0;
+    top: 8px;
+    padding: 9px 8px;
+    transition: 0.3s;
+}.inputComIcon{
+    position: relative;
+    width: 100%;
+}
