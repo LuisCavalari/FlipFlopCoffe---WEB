@@ -28,7 +28,7 @@
                 <h3 class="text-white mt-2"><?php echo $dados['nome']; ?></h3>
                 <div class="white-bar mt-2"></div>
                 <div class="menu-opt p-1 mt-2 w-100">
-                    <a role="button" class="btn link text-decoration-none bg-transparent" href="<?php echo BASE_URL; ?>cadastrarVenda" data-toggle="collapse">
+                    <a  href="<?php echo BASE_URL; ?>home"class="btn link text-decoration-none bg-transparent" >
                         <i class="material-icons mr-1">home</i>Home
                     </a>
                 </div>
@@ -57,7 +57,7 @@
                     </a>
                     <div id="collapseProdutos" class="collapse">
                         <div class="sub-menu-opt">
-                            <a href="<?php echo BASE_URL ?>cadastrarVenda" class="link text-decoration-none p-2 sub-menu-opt">
+                            <a href="<?php echo BASE_URL ?>cadastroProduto" class="link text-decoration-none p-2 sub-menu-opt">
                                 <i class="fas fa-plus mr-2 "></i>Cadastrar produto
                             </a>
 
