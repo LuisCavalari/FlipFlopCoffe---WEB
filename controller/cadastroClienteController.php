@@ -9,7 +9,7 @@ class cadastroClienteController extends Controller {
 
     public function index() {
         if(!empty($_SESSION['cLogin'])){
-            $this->loadDashboard("cadastroUsuario", array("dados"=>$this->pegarDadosAtendente()));
+            $this->loadDashboard("cadastrarCliente", array("dados"=>$this->pegarDadosAtendente()));
         }else{
             header("Location:".BASE_URL);
         }

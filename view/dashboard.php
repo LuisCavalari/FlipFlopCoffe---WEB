@@ -28,7 +28,7 @@
                 <h3 class="text-white mt-2"><?php echo $dados['nome']; ?></h3>
                 <div class="white-bar mt-2"></div>
                 <div class="menu-opt p-1 mt-2 w-100">
-                    <a  href="<?php echo BASE_URL; ?>home"class="btn link text-decoration-none bg-transparent" >
+                    <a href="<?php echo BASE_URL; ?>home" class="btn link text-decoration-none bg-transparent">
                         <i class="material-icons mr-1">home</i>Home
                     </a>
                 </div>
@@ -71,10 +71,30 @@
 
                 </div>
             </div>
+            <div class="menu-opt p-1 mt-1 w-100">
+                <a class="btn  link text-decoration-none bg-transparent " href="#collapseCliente" data-toggle="collapse">
+                    <i class="fas fa-user mr-2"></i></i>Cliente
+                </a>
+                <div id="collapseCliente" class="collapse">
+                    <div class="sub-menu-opt">
+                        <a href="<?php echo BASE_URL ?>cadastroCliente" class="link text-decoration-none p-2 sub-menu-opt">
+                        <i class="fas fa-user-plus mr-2"></i> Cadastrar cliente
+                        </a>
+
+                    </div>
+                    <div class="sub-menu-opt">
+                        <a href="" class="link text-decoration-none  p-2 sub-menu-opt mt-2">
+                            <i class="fas fa-warehouse mr-2"></i>Gerenciar produtos
+                        </a>
+                    </div>
+                </div>
+
+            </div>
         </div>
-        <div class="offset-2 col-md-10">
-            <?php $this->loadView($viewName, $params); ?>
-        </div>
+    </div>
+    <div class="offset-2 col-md-10">
+        <?php $this->loadView($viewName, $params); ?>
+    </div>
     </div>
     <script src="<?php echo BASE_URL; ?>assets/js/maskEalerts.js"></script>
 
