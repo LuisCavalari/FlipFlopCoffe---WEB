@@ -1,7 +1,7 @@
-$(document).ready(()=>{
+$(document).ready(() => {
     abrirModalEditar();
     excluirCliente();
-    }) 
+})
 function atualizarTabelaCliente() {
     let html;
     $.ajax({
@@ -43,7 +43,7 @@ $('#editarCliente').submit(function (event) {
 function abrirModalEditar() {
     $('.editarCliente').on("click", function (event) {
         let id = $(this).data("idcliente")
-         $('#modalEditarCliente').find(".modal-body").html()
+        $('#modalEditarCliente').find(".modal-body").html()
         let loading = `<div class="d-flex justify-content-center"><div class="spinner-border" role="status"><span class="sr-only">Loading...</span></div></div>`
         $.ajax({
             method: "POST",
@@ -88,9 +88,9 @@ $("#pesquisarCliente").keyup(function () {
             <td>${e.telefone != null ? e.telefone : "Não cadastrado"}</td>
             <td><button data-idcliente="${e.id_cliente}" class="btn editarCliente bg-violet text-white"><i class="fas fa-user-edit mr-2"></i>Editar</button> <button data-idcliente="${e.id_cliente}" class="btn excluirCliente bg-red text-white"><i class="fas fa-trash-alt mr-2"></i>Deletar</button></td>
         </tr>`
-        $("tbody").html(html)
-        abrirModalEditar();
-        excluirCliente();
+            $("tbody").html(html)
+            abrirModalEditar();
+            excluirCliente();
         }
     })
 
@@ -98,15 +98,15 @@ $("#pesquisarCliente").keyup(function () {
 
 
 
-function excluirCliente(){
-    $(".excluirCliente").click(function(){
+function excluirCliente() {
+    $(".excluirCliente").click(function () {
         let id = $(this).data("idcliente")
         deletarCliente(id);
-      
-      })
+
+    })
 }
 
-function deletarCliente(dado){
+function deletarCliente(dado) {
     Swal.fire({
         title: 'Tem certeza que deseja fazer isto?',
         text: "Você não irá conseguir reverter as alterações",
@@ -115,22 +115,22 @@ function deletarCliente(dado){
         confirmButtonColor: '#008555',
         cancelButtonColor: '#d33',
         confirmButtonText: 'Confirmar'
-      }).then((result) => {
+    }).then((result) => {
         if (result.value) {
-          $.ajax({
-            method:"POST",
-            url:"gerenciarCliente/deletarCliente",
-            data:{id:dado}
-          }).done(function(resposta){
-                if(resposta == 0){
-                    sucesso("Sucesso","Cliente excluido com sucesso")
-                }else{
-                    erro("Ops...","Não foi possível deletar o cliente")
+            $.ajax({
+                method: "POST",
+                url: "gerenciarCliente/deletarCliente",
+                data: { id: dado }
+            }).done(function (resposta) {
+                if (resposta == 0) {
+                    sucesso("Sucesso", "Cliente excluido com sucesso")
+                } else {
+                    erro("Ops...", "Não foi possível deletar o cliente")
                 }
-             atualizarTabelaCliente();   
-          })
+                atualizarTabelaCliente();
+            })
         }
-      })
+    })
 }
 
 
