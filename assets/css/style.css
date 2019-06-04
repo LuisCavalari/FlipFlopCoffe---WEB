@@ -25,7 +25,7 @@ background: linear-gradient(to top, #2F0743, #361857e1); /* W3C, IE 10+/ Edge, F
     background-color:#914DFF;
 }.menu-opt{
     border-radius: 5px;
-    margin-bottom: 2px;
+    margin-bottom: 1px;
 }.menu-opt:focus{
     border: none;
     border-color: transparent;

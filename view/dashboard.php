@@ -23,40 +23,61 @@
     <div class="container-fluid">
         <div class="sidebar col-md-2">
             <div class="sidebar-sticky d-flex flex-column align-items-center">
-                
+
                 <div class="avatar mt-2"></div>
                 <h3 class="text-white mt-2"><?php echo $dados['nome']; ?></h3>
                 <div class="white-bar mt-2"></div>
                 <div class="menu-opt p-1 mt-2 w-100">
                     <a role="button" class="btn link text-decoration-none bg-transparent" href="<?php echo BASE_URL; ?>cadastrarVenda" data-toggle="collapse">
-                            <i class="material-icons mr-1">home</i>Home
-                        </a>
-                    </div>
-                    <div class="menu-opt p-1 mt-2 w-100">
-                        <a class="btn  link text-decoration-none bg-transparent " href="#collapseVendas" data-toggle="collapse">
-                            <i class="fa link fa-shopping-cart mr-2 "></i>Vendas
-                        </a>
-                        <div id="collapseVendas" class="collapse">
-                            <div class="sub-menu-opt">
-                            <a href="" class="link text-decoration-none p-1 sub-menu-opt">
-                                <i class="fas fa-plus mr-2 "></i>Vendas
-                            </a>
-                            
-                        </div>
-                        <div class="sub-menu-opt"> 
-                            <a href="" class="link text-decoration-none  p-1 sub-menu-opt mt-2">
-                                <i class="fas fa-plus mr-2 "></i>Vendas
-                            </a></div>
-                        </div>
-                    </div>
+                        <i class="material-icons mr-1">home</i>Home
+                    </a>
                 </div>
+                <div class="menu-opt p-1 mt-1 w-100">
+                    <a class="btn  link text-decoration-none bg-transparent " href="#collapseVendas" data-toggle="collapse">
+                        <i class="fa link fa-shopping-cart mr-2 "></i>Vendas
+                    </a>
+                    <div id="collapseVendas" class="collapse">
+                        <div class="sub-menu-opt">
+                            <a href="<?php echo BASE_URL ?>cadastrarVenda" class="link text-decoration-none p-2 sub-menu-opt">
+                                <i class="fas fa-plus mr-2 "></i>Cadastrar venda
+                            </a>
+
+                        </div>
+                        <div class="sub-menu-opt">
+                            <a href="" class="link text-decoration-none  p-2 sub-menu-opt mt-2">
+                                <i class="fas fa-plus mr-2 "></i>Gerenciar vendas
+                            </a>
+                        </div>
+                    </div>
+
+                </div>
+                <div class="menu-opt p-1 mt-1 w-100">
+                    <a class="btn  link text-decoration-none bg-transparent " href="#collapseProdutos" data-toggle="collapse">
+                        <i class="fas fa-pallet mr-2"></i>Produtos
+                    </a>
+                    <div id="collapseProdutos" class="collapse">
+                        <div class="sub-menu-opt">
+                            <a href="<?php echo BASE_URL ?>cadastrarVenda" class="link text-decoration-none p-2 sub-menu-opt">
+                                <i class="fas fa-plus mr-2 "></i>Cadastrar produto
+                            </a>
+
+                        </div>
+                        <div class="sub-menu-opt">
+                            <a href="" class="link text-decoration-none  p-2 sub-menu-opt mt-2">
+                                <i class="fas fa-warehouse mr-2"></i>Gerenciar produtos
+                            </a>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
         </div>
         <div class="offset-2 col-md-10">
             <?php $this->loadView($viewName, $params); ?>
         </div>
     </div>
     <script src="<?php echo BASE_URL; ?>assets/js/maskEalerts.js"></script>
-    
+
 
 </body>
 
