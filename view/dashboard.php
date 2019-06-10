@@ -16,6 +16,8 @@
     <script src="<?php echo BASE_URL; ?>assets/js/select2.min.js"></script>
     <script src="<?php echo BASE_URL; ?>assets/js/jquery.mask.min.js"></script>
     <script src="<?php echo BASE_URL; ?>assets/js/bootstrap.min.js"></script>
+    <script src="<?php echo BASE_URL; ?>assets/js/Chart.min.js"></script>
+
     <title>FlipFlop</title>
 </head>
 
@@ -63,7 +65,7 @@
 
                         </div>
                         <div class="sub-menu-opt">
-                            <a href="" class="link text-decoration-none  p-2 sub-menu-opt mt-2">
+                            <a href="<?php echo BASE_URL ?>gerenciarProdutos" class="link text-decoration-none  p-2 sub-menu-opt mt-2">
                                 <i class="fas fa-warehouse mr-2"></i>Gerenciar produtos
                             </a>
                         </div>
