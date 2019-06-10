@@ -21,7 +21,7 @@
 
 <body>
     <div class="container-fluid">
-        <div class="sidebar col-md-2">
+        <div class="sidebar col-md-2 ">
             <div class="sidebar-sticky d-flex flex-column align-items-center">
 
                 <div class="avatar mt-2"></div>
@@ -83,8 +83,8 @@
 
                     </div>
                     <div class="sub-menu-opt">
-                        <a href="" class="link text-decoration-none  p-2 sub-menu-opt mt-2">
-                            <i class="fas fa-warehouse mr-2"></i>Gerenciar produtos
+                        <a href="<?php echo BASE_URL; ?>gerenciarCliente" class="link text-decoration-none  p-2 sub-menu-opt mt-2">
+                            <i class="fas fa-users mr-2"></i>Gerenciar clientes
                         </a>
                     </div>
                 </div>
