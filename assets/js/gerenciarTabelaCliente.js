@@ -11,13 +11,13 @@ function atualizarTabelaCliente() {
     }).done(function (resposta) {
         for (e of resposta) {
             html += `<tr>
-                <th>${e.id_cliente}</th>
-                <th>${e.nome_cliente}</th>
-                <th>${e.cpf}</th>
-                <th>${e.email_cliente}</th>
-                <th>${e.telefone != null ? e.telefone : "Não cadastrado"}</th>
-                <th><button data-idcliente="${e.id_cliente}" class="btn editarCliente bg-violet text-white"><i class="fas fa-user-edit mr-2"></i>Editar</button> <button data-idcliente="${e.id_cliente}" class="btn excluirCliente bg-red text-white"><i class="fas fa-trash-alt mr-2"></i>Deletar</button></th>
-            </tr>`
+            <td>${e.id_cliente}</td>
+            <td>${e.nome_cliente}</td>
+            <td>${e.cpf}</td>
+            <td>${e.email_cliente}</td>
+            <td>${e.telefone != null ? e.telefone : "Não cadastrado"}</td>
+            <td><button data-idcliente="${e.id_cliente}" class="btn editarCliente bg-violet text-white"><i class="fas fa-user-edit mr-2"></i>Editar</button> <button data-idcliente="${e.id_cliente}" class="btn excluirCliente bg-red text-white"><i class="fas fa-trash-alt mr-2"></i>Deletar</button></td>
+        </tr>`
         }
         $("tbody").html(html);
         abrirModalEditar();
